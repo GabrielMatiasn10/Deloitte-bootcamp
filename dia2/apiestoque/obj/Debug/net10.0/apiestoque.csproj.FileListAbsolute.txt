@@ -1,0 +1,15 @@
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\bin\Debug\net10.0\apiestoque.exe
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\bin\Debug\net10.0\apiestoque.deps.json
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\bin\Debug\net10.0\apiestoque.runtimeconfig.json
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\bin\Debug\net10.0\apiestoque.dll
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\bin\Debug\net10.0\apiestoque.pdb
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\obj\Debug\net10.0\apiestoque.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\obj\Debug\net10.0\apiestoque.AssemblyInfoInputs.cache
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\obj\Debug\net10.0\apiestoque.AssemblyInfo.cs
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\obj\Debug\net10.0\apiestoque.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\obj\Debug\net10.0\apiestoque.dll
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\obj\Debug\net10.0\refint\apiestoque.dll
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\obj\Debug\net10.0\apiestoque.pdb
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\obj\Debug\net10.0\apiestoque.genruntimeconfig.cache
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\obj\Debug\net10.0\ref\apiestoque.dll
+C:\Users\aluno\Desktop\Projeto Deloitte\Deloitte-Bootcampp\dia2\apiestoque\obj\Debug\net10.0\apiestoque.sourcelink.json
