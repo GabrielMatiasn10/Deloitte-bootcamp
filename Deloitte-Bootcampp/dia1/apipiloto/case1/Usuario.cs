@@ -4,7 +4,6 @@ public static class UsuarioConfig
 {
     public static void ExecutarCadastro()
     {
-        
         try
         {
             Console.WriteLine("=== Cadastro de Usuário ===");
