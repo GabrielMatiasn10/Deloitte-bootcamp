@@ -1,5 +1,5 @@
 #  Deloitte Bootcamp: Projeto .NET
-![Deloitte Banner](https://images.squarespace-cdn.com/content/v1/5a0c10a480bd5e0a6182c0b2/1603986872583-0599G1C6X7N5P4H0O507/Deloitte+Banner.png)
+![Deloitte Banner](https://media.licdn.com/dms/image/v2/D4E3DAQFGToUWHt4fnQ/image-scale_191_1128/B4EZni6KWfIUAc-/0/1760448523010/deloitte_cover?e=1770562800&v=beta&t=2DMOCsmCNk3Xn7pHfoi52ArZq_O2MFV7JWaabGRuUt8)
 
 Repositório dedicado ao desenvolvimento do projeto prático durante o **Bootcamp da Deloitte**. 
 
