@@ -1,0 +1,6 @@
+@Contador_HostAddress = http://localhost:5012
+
+GET {{Contador_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
