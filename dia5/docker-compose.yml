@@ -1,9 +1,0 @@
-service:
-  postgres:
-    image: postgres:16
-    coitainer_name: pg_estudos
-    restart: unless-stopped
-    environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin123
-      
