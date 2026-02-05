@@ -55,6 +55,8 @@ namespace SistemaEscolar
                 aluno.Notas[i] = double.Parse(Console.ReadLine());
             }
 
+            
+
             // Exibindo Relatório
             Console.WriteLine("\n");
             Console.WriteLine($"RELATÓRIO DO ALUNO: {aluno.Nome}");
