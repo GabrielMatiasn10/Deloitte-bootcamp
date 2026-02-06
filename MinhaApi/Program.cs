@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using MinhaApi.Data; 
-using Npgsql.EntityFrameworkCore.PostgreSQL;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,10 +9,10 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    var cs = builder.Configuration.GetConnectionString("DefaultConnection"); // ou "Postgres", conforme você padronizou
+    var cs = builder.Configuration.GetConnectionString("DefaultConnection"); 
     options
         .UseNpgsql(cs)
-        .UseSnakeCaseNamingConvention(); // <- esta linha resolve a conversão para snake_case
+        .UseSnakeCaseNamingConvention();
 });
 
 

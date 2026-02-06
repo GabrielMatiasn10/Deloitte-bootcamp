@@ -121,3 +121,4 @@ C:\Users\rrojas\OneDrive - Deloitte (O365D)\Desktop\Projeto de estudos\MinhaApi\
 C:\Users\rrojas\OneDrive - Deloitte (O365D)\Desktop\Projeto de estudos\MinhaApi\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\rrojas\OneDrive - Deloitte (O365D)\Desktop\Projeto de estudos\MinhaApi\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\rrojas\OneDrive - Deloitte (O365D)\Desktop\Projeto de estudos\MinhaApi\obj\Debug\net10.0\MinhaApi.sourcelink.json
+C:\Users\rrojas\OneDrive - Deloitte (O365D)\Desktop\Projeto de estudos\MinhaApi\bin\Debug\net10.0\EFCore.NamingConventions.dll
