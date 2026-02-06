@@ -8,13 +8,26 @@
     ".NETCoreApp,Version=v10.0": {
       "MinhaApi/1.0.0": {
         "dependencies": {
+          "EFCore.NamingConventions": "10.0.1",
           "Microsoft.AspNetCore.OpenApi": "10.0.2",
           "Microsoft.EntityFrameworkCore": "10.0.2",
-          "Microsoft.EntityFrameworkCore.Tools": "10.0.2",
+          "Microsoft.EntityFrameworkCore.Design": "10.0.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.0"
         },
         "runtime": {
           "MinhaApi.dll": {}
+        }
+      },
+      "EFCore.NamingConventions/10.0.1": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.2",
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.2"
+        },
+        "runtime": {
+          "lib/net10.0/EFCore.NamingConventions.dll": {
+            "assemblyVersion": "10.0.1.0",
+            "fileVersion": "10.0.1.0"
+          }
         }
       },
       "Humanizer.Core/2.14.1": {
@@ -365,11 +378,6 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/10.0.2": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "10.0.2"
-        }
-      },
       "Microsoft.Extensions.DependencyModel/10.0.2": {
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.DependencyModel.dll": {
@@ -510,6 +518,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "EFCore.NamingConventions/10.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xs5k8XfNKPkkQSkGmZkmDI1je0prLTdxse+s8PgTFZxyBrlrTLzTBUTVJtQKSsbvu4y+luAv8DdtO5SALJE++A==",
+      "path": "efcore.namingconventions/10.0.1",
+      "hashPath": "efcore.namingconventions.10.0.1.nupkg.sha512"
+    },
     "Humanizer.Core/2.14.1": {
       "type": "package",
       "serviceable": true,
@@ -593,13 +608,6 @@
       "sha512": "sha512-1fUeyNmqDNfMogJ2ut7OKO57/WGjjkHMYeX51SpA3PwP7ftbx8g/Z3fbErD+1q14DILrqJfsszYsYhGssBRfDg==",
       "path": "microsoft.entityframeworkcore.relational/10.0.2",
       "hashPath": "microsoft.entityframeworkcore.relational.10.0.2.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.Tools/10.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Q7s7zCjEikOn4e7yS7kMPm3xkKR7CdfUhmN/sdFsKLslvS/iGS8zQUROvZRkbxRISA2SJ6sfho0cX8F8lo1khQ==",
-      "path": "microsoft.entityframeworkcore.tools/10.0.2",
-      "hashPath": "microsoft.entityframeworkcore.tools.10.0.2.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyModel/10.0.2": {
       "type": "package",
