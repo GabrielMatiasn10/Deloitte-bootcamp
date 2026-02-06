@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LJZ2mME8l1E=",
+  "dgSpecHash": "ldrrk4idrQo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\aluno\\Desktop\\Projeto Deloitte\\Deloitte-Bootcampp\\dia2\\apiestoque\\apiestoque.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/apiestoque.csproj",
+  "expectedPackageFiles": [
+    "/home/gabriel/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.12/microsoft.netcore.app.host.linux-x64.9.0.12.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,0 +1,15 @@
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/bin/Debug/net9.0/apiestoque
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/bin/Debug/net9.0/apiestoque.deps.json
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/bin/Debug/net9.0/apiestoque.runtimeconfig.json
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/bin/Debug/net9.0/apiestoque.dll
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/bin/Debug/net9.0/apiestoque.pdb
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/obj/Debug/net9.0/apiestoque.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/obj/Debug/net9.0/apiestoque.AssemblyInfoInputs.cache
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/obj/Debug/net9.0/apiestoque.AssemblyInfo.cs
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/obj/Debug/net9.0/apiestoque.csproj.CoreCompileInputs.cache
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/obj/Debug/net9.0/apiestoque.sourcelink.json
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/obj/Debug/net9.0/apiestoque.dll
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/obj/Debug/net9.0/refint/apiestoque.dll
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/obj/Debug/net9.0/apiestoque.pdb
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/obj/Debug/net9.0/apiestoque.genruntimeconfig.cache
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/obj/Debug/net9.0/ref/apiestoque.dll

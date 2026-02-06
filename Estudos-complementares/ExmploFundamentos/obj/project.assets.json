@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/apiestoque.csproj",
-      "projectName": "apiestoque",
-      "projectPath": "/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/apiestoque.csproj",
+      "projectUniqueName": "/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/ExmploFundamentos.csproj",
+      "projectName": "ExmploFundamentos",
+      "projectPath": "/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/ExmploFundamentos.csproj",
       "packagesPath": "/home/gabriel/.nuget/packages/",
-      "outputPath": "/home/gabriel/Projects/deloitte/Deloitte-bootcamp/dia2/apiestoque/obj/",
+      "outputPath": "/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/gabriel/.nuget/NuGet/NuGet.Config"
@@ -26,7 +26,6 @@
         "net9.0"
       ],
       "sources": {
-        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -45,7 +44,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -61,18 +60,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[9.0.12, 9.0.12]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/gabriel/.dotnet/sdk/9.0.310/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

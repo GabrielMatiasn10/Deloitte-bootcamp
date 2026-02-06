@@ -1,0 +1,15 @@
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/bin/Debug/net9.0/ExmploFundamentos
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/bin/Debug/net9.0/ExmploFundamentos.deps.json
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/bin/Debug/net9.0/ExmploFundamentos.runtimeconfig.json
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/bin/Debug/net9.0/ExmploFundamentos.dll
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/bin/Debug/net9.0/ExmploFundamentos.pdb
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/obj/Debug/net9.0/ExmploFundamentos.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/obj/Debug/net9.0/ExmploFundamentos.AssemblyInfoInputs.cache
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/obj/Debug/net9.0/ExmploFundamentos.AssemblyInfo.cs
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/obj/Debug/net9.0/ExmploFundamentos.csproj.CoreCompileInputs.cache
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/obj/Debug/net9.0/ExmploFundamentos.sourcelink.json
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/obj/Debug/net9.0/ExmploFundamentos.dll
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/obj/Debug/net9.0/refint/ExmploFundamentos.dll
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/obj/Debug/net9.0/ExmploFundamentos.pdb
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/obj/Debug/net9.0/ExmploFundamentos.genruntimeconfig.cache
+/home/gabriel/Projects/deloitte/Deloitte-bootcamp/Estudos-complementares/ExmploFundamentos/obj/Debug/net9.0/ref/ExmploFundamentos.dll
