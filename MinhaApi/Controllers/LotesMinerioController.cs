@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using MinhaApi.Data;
 using MinhaApi.Models;
 using MinhaApi.Dtos;
+using MinhaApi.Queue;
 
 namespace MinhaApi.Controllers
 {
@@ -12,7 +13,15 @@ namespace MinhaApi.Controllers
     {
         private readonly AppDbContext _db;
 
-        public LotesMinerioController(AppDbContext db) => _db = db;
+        private readonly ILoteQueueProducer _queue;
+
+        
+        public LotesMinerioController(AppDbContext db, ILoteQueueProducer queue)
+        {
+            _db = db;
+            _queue = queue;
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateLoteMinerioDto input)
@@ -53,6 +62,16 @@ namespace MinhaApi.Controllers
             _db.LotesMinerio.Add(lote);
             await _db.SaveChangesAsync();
 
+            
+            await _queue.EnfileirarAsync(new ProcessarLoteMessage(
+                LoteId: lote.Id,
+                CodigoLote: lote.CodigoLote,
+                TeorFe: lote.TeorFe,
+                Umidade: lote.Umidade,
+                DataProducaoUtc: lote.DataProducao,
+                Acao: "RecalcularClassificacao"
+            ));
+            
             return CreatedAtAction(nameof(GetById), new { id = lote.Id }, lote);
         }
 

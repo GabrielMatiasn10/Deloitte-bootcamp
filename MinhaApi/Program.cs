@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using MinhaApi.Data; 
+using StackExchange.Redis;
+using MinhaApi.Queue;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +23,25 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 builder.Services.AddControllers();
+
+
+// Redis ConnectionMultiplexer como Singleton
+builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
+{
+    var cs = builder.Configuration["Redis:ConnectionString"]!;
+    return ConnectionMultiplexer.Connect(cs);
+});
+
+
+// Options da fila
+builder.Services.Configure<RedisQueueOptions>(builder.Configuration.GetSection("Redis"));
+
+// Producer (para enfileirar)
+builder.Services.AddSingleton<ILoteQueueProducer, LoteQueueProducer>();
+
+// Worker/Consumer (para processar)
+builder.Services.AddHostedService<LoteQueueWorker>();
+
 
 var app = builder.Build();
 
