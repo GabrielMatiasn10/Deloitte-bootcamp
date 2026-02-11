@@ -120,4 +120,4 @@ campos obrigatórios ou opcionais
 10. Criar uma classe do Controllers, que é a chamada com a API externa. Colocar como LotesMinerioController.cs
 
 
-
+docker compose up -d

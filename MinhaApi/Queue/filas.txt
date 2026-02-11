@@ -1,0 +1,67 @@
+Na pasta MinhaApi, rodar:
+
+dotnet add package StackExchange.Redis
+
+Adicionar ao Docker uma função para o Redis.
+
+Incluir no app.settings.json a função do redis.
+Criar as classes.
+
+Incluir a saída do Redis no Controller.
+
+Incluir chamada do Redis no program.
+
+
+
+
+Rodar o POST da nossa API de lote minério e checar se a fila foi criada no Redis.
+
+1) O que são filas? 
+Fila é um mecanismo para desacoplar quem produz um trabalho (produtor) de quem consome e processa esse trabalho (consumidor). Em vez de chamar o processamento diretamente (síncrono), você publica uma mensagem numa fila e processa de forma assíncrona.
+Benefícios:
+•	Resiliência: se o consumidor cair, as mensagens não se perdem.
+•	Escalabilidade: você pode ter vários consumidores em paralelo.
+•	Desacoplamento: o produtor não precisa saber como o consumidor processa.
+•	Suavização de picos: a fila absorve bursts.
+________________________________________
+2) Por que Redis Streams?
+O Redis tem vários modelos (Pub/Sub, listas, sorted sets). Streams é o mais moderno para cenários de filas com:
+•	Persistência (apend-only file) e reconstrução.
+•	IDs ordenados (timestamp-seq: ex. 1770738550268-0).
+•	Consumer Groups: múltiplos consumidores cooperando, com pendências, ACK, reentrega, DLQ.
+•	Operações chave: XADD, XREADGROUP, XACK, XPENDING, XCLAIM / XAUTOCLAIM.
+________________________________________
+3) A arquitetura que você montou
+[API HTTP] --POST--> [Producer] --XADD--> [Redis Stream: lotes-stream]
+                                        \
+                                         \ (Consumer Group: grupo-lotes)
+                                          \
+                                      [Worker: LoteQueueWorker] --XREADGROUP--> processa --> XACK
+                                                              \--> reentrega/claim --> DLQ (quando excede)
+Papéis:
+•	Producer (LoteQueueProducer)
+Serializa o objeto ProcessarLoteMessage em JSON e faz XADD no stream (type, payload).
+•	Worker (LoteQueueWorker)
+o	Garante o consumer group com XGROUP CREATE (ou ignora se já existe).
+o	Lê com XREADGROUP como consumer (consumerName), processa e dá ACK.
+o	Reentrega pendentes usando XCLAIM (ou XAUTOCLAIM) quando o IdleTime é maior que o mínimo.
+o	Movimenta para DLQ quando excede MaxDeliveries.
+•	Redis
+Guarda os eventos do stream, rastreia pendências por grupo/consumer, suporta reentrega.
+________________________________________
+4) O que exatamente acontece com o POST /api/LotesMinerio
+1.	API recebeu o JSON com os dados do lote (ex.: loteId, codigoLote, teorFe, etc.).
+2.	O controller chamou ILoteQueueProducer.EnfileirarAsync(...).
+3.	O Producer serializou o DTO para JSON (JsonSerializerDefaults.Web).
+
+4.	O Redis gerou um ID do evento (ex.: 1770738550268-0) e armazenou a entrada no stream.
+5.	O Worker (BackgroundService): 
+1.	Garantiu o Consumer Group (XGROUP CREATE).
+2.	Fez XREADGROUP (novas mensagens >), desserializou o payload em ProcessarLoteMessage.
+3.	Rodou ProcessarAsync: 
+1.	Calculou a classificação conforme TeorFe/Umidade.
+2.	Simulou I/O (Task.Delay(200)).
+3.	Fez log:
+"[Fila] Lote MNP-2026-000137 (Id=8) -> Ação=RecalcularClassificacao | Classificação=Padrão|Premium|Baixa"
+4.	Fez XACK para marcar a mensagem como processada (sai do PEL — Pending Entries List).
+Ou seja, seu POST aciona um evento assíncrono e o worker processa em background, sem bloquear a requisição HTTP.
