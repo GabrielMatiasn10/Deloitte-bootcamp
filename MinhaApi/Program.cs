@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using MinhaApi.Data; 
 using StackExchange.Redis;
 using MinhaApi.Queue;
+using MinhaApi.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -42,6 +43,7 @@ builder.Services.AddSingleton<ILoteQueueProducer, LoteQueueProducer>();
 // Worker/Consumer (para processar)
 builder.Services.AddHostedService<LoteQueueWorker>();
 
+builder.Services.AddSingleton<LoteService>();
 
 var app = builder.Build();
 
