@@ -11,9 +11,6 @@ Incluir a saída do Redis no Controller.
 
 Incluir chamada do Redis no program.
 
-
-
-
 Rodar o POST da nossa API de lote minério e checar se a fila foi criada no Redis.
 
 1) O que são filas? 
@@ -65,3 +62,6 @@ ________________________________________
 "[Fila] Lote MNP-2026-000137 (Id=8) -> Ação=RecalcularClassificacao | Classificação=Padrão|Premium|Baixa"
 4.	Fez XACK para marcar a mensagem como processada (sai do PEL — Pending Entries List).
 Ou seja, seu POST aciona um evento assíncrono e o worker processa em background, sem bloquear a requisição HTTP.
+
+Para limpar as filas. Rodar no terminal da pasta minha API:
+docker exec -it redis_estudos redis-cli DEL lotes:processamento
